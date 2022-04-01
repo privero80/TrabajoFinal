@@ -3,6 +3,10 @@
     padding:0px;
 }
 
+body{
+    background-color:rgb(66,126,128);
+}
+
 header{
     display: flex;
     height:90px;
@@ -47,7 +51,7 @@ ul li a:active{
 }
 
 #titulo{
-    height: 550px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +69,7 @@ h1{
 
 #fondo{
     width:100%;
-    height: 650px;
+    height: 550px;
     background-image: url(./imagenes/codigo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +79,7 @@ h1{
 
 #contenido{
     position: relative;
-    height:1000px;
+    height:auto;
     background-color: rgb(66,126,128);
 }
 
@@ -92,9 +96,9 @@ h1{
 #tarjetas{
     width:80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
-    height:600px;
+    height:700px;
     border: 1px solid black;
     align-items: center;
     justify-content: space-around;
@@ -102,16 +106,19 @@ h1{
 }
 
 .card{
-    padding:1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
     width:400px;
-    height: 450px;
+    height: 480px;
     border: 1px solid black;
     background-color: #F0F5E4;
-    border: 5px solid rgb(21,68,84);;
+    border: 5px solid rgb(21,68,84);
+
 }
 
 .card img{
-    margin: auto;
     width:100%;
 }
 
@@ -119,19 +126,116 @@ h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin: 50px 20px;
+    height: 30px;
 }
 
-.card ul li{
-    display: block;
-    margin: auto;
-
-}
-
-.card ul li a{
+.card a{
     width:100px;
     background-color: rgb(66,126,128);
     color:#F0F5E4;
-    padding:12px 50px;
+    padding:12px 30px;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:20px;
+    box-shadow: 2px 3px 1px rgb(21,68,84);
+}
+
+.card a:active{
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:100px;
+    background-color: rgb(32, 32, 32);
+    margin-bottom: 15px;
+}
+
+#logo{
+    display: flex;
+}
+
+#texto1{
+    display: flex;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    padding:10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#texto1 p{
+    color:white;
+}
+
+#texto2{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#texto2 p{
+    color:white
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:100px;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    width: 650px;
+}
+
+.titulos h1{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(66,126,128);
+    color: #F0F5E4;
+    text-shadow: 2px 2px 1px rgb(21,68,84);
+    display: block;
+}
+
+.textos p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    display: block;
+}
+
+#article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:80px;
+}
+video{
+    width: 100%;
 }
