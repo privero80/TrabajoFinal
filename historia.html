@@ -12,6 +12,14 @@
 <body>
     <div id="fondo"></div>
     <header>
+        <a id="compu" href="./index.html">
+            <svg width="105px" height="75px">
+                <rect class="fondos" x="15" Y="5" width="75px" height="40px" fill="#3F6797" rx="5"></rect>
+                <rect class="encimas" x="20" Y="10" width="65px" height="30px" fill="#B1D5E4" rx="5"></rect>
+                <polygon class="fondos" points="0 75, 25 50, 80 50, 105 75" fill="#3F6797"></polygon>
+                <polygon class="encimas" points="13 70, 30 55, 75 55, 92 70" fill="#B1D5E4"></polygon>
+            </svg>
+        </a>
         <ul>
             <li><a href="./historia.html">HISTORIA</a></li>
             <li><a href="#">JUGUEMOS</a></li>
@@ -81,24 +89,35 @@
         <div id="article">
             <h2>Un breve video para complementar lo visto</h2>
             <div id="videoCont">
-                <video src="./video/video-explicacion.mp4" poster="./imagenes/img-video.jpg"></video>
-                <div id="botones">
-
+                <video poster="./imagenes/img-video.jpg">
+                    <source src="./video/historia-Comp.mp4">
+                    <source src="./video/historia-Comp.ogv">
+                </video>
+                <div id="barra">
+                    <div id="botones">
+                        <button id="play">
+                            <img src="./imagenes/play.svg" alt="play">
+                        </button>
+                        <button id="pausa">
+                            <img src="./imagenes/pausa.svg" alt="pausa">
+                        </button>
+                    </div>
+                    <p class="duracion"></p>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <div id="logo">
-
-        </div>
-        <div id="texto1">
+        <div id="logoHistoria">
+            <img src="./imagenes/logo.svg" alt="logo">
             <p>PROGRAMACION </br> E </br>HISTORIA</p>
         </div>
         <div id="texto2">
             <P>Sitio con fines educativos - Creado por Pablo Rivero</P>
         </div>
+        
     </footer>
+    <script src="./codigo.js"></script>
 </body>
 
 </html>

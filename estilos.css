@@ -9,10 +9,54 @@ body{
 
 header{
     display: flex;
-    height:90px;
+    height:110px;
     background-color: rgb(66,126,128);
-    justify-content: flex-end;
+    justify-content: space-between;
 }
+
+#compu{
+    width: 105px;
+    height: 75px;
+    margin: 10px 0px 0px 80px;
+    padding: 0px;
+}
+.fondos{
+    opacity: 0;
+    animation-name: animacionFondos;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes animacionFondos{
+    from{
+        transform: translate(0px, -10px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.encimas{
+    opacity: 0;
+    animation-name: animacionEncimas;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+ @keyframes animacionEncimas{
+     from{
+        transform: translate(0px, -10px);
+        opacity: 0;
+     }
+     to{
+        transform: translate(0px, 0px);
+        opacity: 1;
+     }
+ }
 
 ul{
     display: flex;
@@ -69,7 +113,7 @@ h1{
 
 #fondo{
     width:100%;
-    height: 550px;
+    height: 600px;
     background-image: url(./imagenes/codigo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,15 +138,13 @@ h1{
 }
 
 #tarjetas{
-    width:80%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
-    height:700px;
-    border: 1px solid black;
+    height:900px;
     align-items: center;
     justify-content: space-around;
-    gap:15px;
+    gap:20px;
 }
 
 .card{
@@ -149,46 +191,44 @@ h1{
 
 footer{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width:100%;
     height:100px;
     background-color: rgb(32, 32, 32);
-    margin-bottom: 15px;
 }
 
 #logo{
-    display: flex;
-}
-
-#texto1{
-    display: flex;
-    width: 150px;
-    height: 80px;
+    display:flex;
+    flex-direction: row;
+    margin-left: 80px;
     text-align: center;
-    align-items: center;
-    padding:10px;
-    font-size: 17px;
+    gap: 50px;
+    align-items:flex-end;
+    color:white;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
-#texto1 p{
+#logoHistoria{
+    display:flex;
+    flex-direction: row;
+    margin-left: 30px;
+    text-align: center;
+    gap: 100px;
+    align-items:flex-end;
     color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 #texto2{
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    border: 1px solid white;
     padding: 10px;
     margin-right: 20px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#texto2 p{
-    color:white
+    color: white;
 }
 
 .section{
@@ -231,11 +271,77 @@ footer{
 }
 
 #article{
+    height:950px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap:80px;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+#videoCont{
+    display: block;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;
+    background-color: black;
+    justify-content: space-around;
 }
 video{
     width: 100%;
+}
+
+#barra{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin: auto;
+    padding: 5px 0px 5px 0px;
+    box-sizing: border-box;
+}
+
+#botones{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+#play{
+    width: 100px;
+    height: 50px;
+    background-color:#F0F5E4;
+    border-radius: 10px;
+    box-shadow: 2px 3px 1px rgb(21,68,84);
+}
+
+#pausa{
+    width: 100px;
+    height: 50px;
+    background-color:#F0F5E4;
+    border-radius: 10px;
+    box-shadow: 2px 3px 1px rgb(21,68,84);
+}
+
+#play:active{
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+
+#pausa:active{
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+
+#videoCont p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    align-self: flex-end;
+    margin-right: 20px;
 }
