@@ -10,6 +10,6 @@ botonPausa.addEventListener('click',()=>{
     video.pause();
 });
 
-let duracionVideo = document.querySelector('.duracion');
-
-duracionVideo.textContent=`Duracion Video: ${video.duration}`;
+window.addEventListener('load',()=>{
+    document.getElementById('duracion').innerHTML=` Duracion video : ${video.duration}`;
+});
