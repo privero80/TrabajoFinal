@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./estilos.css" type="text/css">
     <title>Juguemos</title>
 </head>
-<body>
+<body onload="origen">
     <div id="fondo"></div>
     <header>
         <a id="compu" href="./index.html">
@@ -28,7 +28,28 @@
     </div>
     <div id="contenido">
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
- 
+        <div id="juego">
+            <div id="destino">
+                <div class="imgDest" id="destinoUno">
+                    <p>Arrastre y suelte la imagen aqui</p>
+                </div>
+                <div class="imgDest" id="destinoDos">
+                    <p>Arrastre y suelte la imagen aqui</p>
+                </div>
+                <div class="imgDest" id="destinoTres">
+                    <p>Arrastre y suelte la imagen aqui</p>
+                </div>
+            </div>
+            <div id="origen">
+                    <img  class="imagen" id="oriUno" src="./imagenes/rompe2.png" alt="Carta1">
+            
+                    <img class="imagen" id="oriDos" src="./imagenes/rompe1.png" alt="Carta 2">
+            
+                    <img class="imagen" id="oriTres" src="./imagenes/Rompe3.png" alt="carta 3">
+            </div>
+            <button id="reiniciar">Reiniciar</button>
+        </div> 
     </div>
+    <script src="./codigoJuego.js"></script>
 </body>
 </html>

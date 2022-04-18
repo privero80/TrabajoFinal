@@ -13,3 +13,4 @@ botonPausa.addEventListener('click',()=>{
 window.addEventListener('load',()=>{
     document.getElementById('duracion').innerHTML=` Duracion video : ${video.duration}`;
 });
+
